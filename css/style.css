@@ -1,0 +1,352 @@
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.box{
+
+  position: absolute;
+  top:-183px;
+  left:-160px;
+  width:100px;
+  height:95px;
+
+
+}
+.cont, .pers, .tex{
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 50px;
+  float:left;
+  color:black;
+  font-family:'Jura', sans-serif;
+  font-size: 17px;
+}
+
+.menu{
+  position: absolute;
+  top:-183px;
+  left:540px;
+  width:500px;
+  height:60px;
+
+}
+
+.logo{
+  position: relative;
+  padding-left: 10px;
+  padding-top: 5px;
+  float: left;
+  color:black;
+  font-family:'Jura', sans-serif;
+  font-size: 20px;
+
+}
+
+/* Slick Modifications to Hide Default Arrows */
+.label_slide .slick-prev {
+	visibility: hidden;
+}
+
+.label_slide .slick-next {
+	visibility: hidden;
+}
+
+.left .slick-prev {
+	visibility: hidden;
+}
+
+.right .slick-prev {
+	visibility: hidden;
+}
+
+.left .slick-next {
+	visibility: hidden;
+}
+
+.right .slick-next {
+	visibility: hidden;
+}
+
+.left2 .slick-prev {
+	visibility: hidden;
+}
+
+.right2 .slick-prev {
+	visibility: hidden;
+}
+
+.left2 .slick-next {
+	visibility: hidden;
+}
+
+.right2 .slick-next {
+	visibility: hidden;
+}
+
+/* previous and next buttons for center slideshow */
+
+.center .slick-prev {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: -180px;
+	top: 250px;
+	opacity: 0.01;
+}
+
+.center .slick-next {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 530px;
+	top: 250px;
+	opacity: 0.01;
+}
+
+
+
+/* General Slideshow Positioning and Sizing */
+
+.container {
+	width: 1200px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 49%;
+	transform: translate(-440px, -200px);
+}
+
+.thumb {
+	height: 100px;
+}
+
+.left, .right {
+	position: absolute;
+	width: 200px;
+	top: 50%;
+	transform: translate(0px, -50px);
+}
+
+.left2, .right2 {
+	position: absolute;
+	width: 200px;
+	top: 50%;
+	transform: translate(0px, -50px);
+}
+
+
+.left {
+	left: 15px;
+}
+
+.right {
+	right: 320px;
+}
+
+.left2 {
+	left: -150px;
+}
+
+.right2 {
+	right: 160px;
+}
+.zoom {
+	height: 496px;
+}
+
+.slide {
+	width: 500px;
+	height: 500px;
+}
+.label_slide{
+  position: absolute;
+	width: 300px;
+	left: 33%;
+	top: 170%;
+	transform: translate(-200px, -200px);
+
+	z-index: 2;
+}
+.label{
+  font-family: Quicksand;
+  font-size: 12px;
+  height: 20px;
+}
+
+.center {
+	position: absolute;
+	width: 510px;
+	left: 33%;
+	top: 40%;
+	transform: translate(-200px, -200px);
+	border: solid black 8px;
+	z-index: 2;
+}
+
+
+
+/* background images for side buttons */
+
+.one_side {
+	background: url(../images/1n_s_w.png);
+	background-size: 100%;
+}
+
+.two_side {
+	background: url(../images/2m_s_w.png);
+	background-size: 100%;
+}
+
+.three_side {
+	background: url(../images/3p_s_w.png);
+	background-size: 100%;
+}
+
+.four_side {
+	background: url(../images/4s_s_w.png);
+	background-size: 100%;
+}
+
+.five_side {
+	background: url(../images/5g_s_w.png);
+	background-size: 100%;
+}
+
+
+/* background images for center image */
+
+.one {
+	position: absolute;
+	background: url(../images/1n_s.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: transform .5s;
+}
+
+.two {
+	position: absolute;
+	background: url(../images/2m_s.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: transform .5s;
+}
+
+.three {
+	position: absolute;
+	background: url(../images/3p_s.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: transform .5s;
+}
+
+.four {
+	position: absolute;
+	background: url(../images/4s_s.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: transform .5s;
+}
+
+.five {
+	position: absolute;
+	background: url(../images/5g_s.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: transform .5s;
+}
+
+/* Flip animations for center image on hover */
+
+.flip {
+	perspective: 600px;
+}
+
+.one_back {
+	position: absolute;
+	background: url(../images/1n_t.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: transform .5s;
+}
+
+.two_back {
+	position: absolute;
+	background: url(../images/2m_t.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: transform .5s;
+}
+
+.three_back {
+	position: absolute;
+	background: url(../images/3p_t.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: transform .5s;
+}
+
+.four_back {
+	position: absolute;
+	background: url(../images/4s_t.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: transform .5s;
+}
+
+.five_back {
+	position: absolute;
+	background: url(../images/5g_t.png);
+	background-size: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: transform .5s;
+}
+.flip:hover .one {
+	transform: rotateX()(-180deg);
+}
+
+.flip:hover .one_back {
+	transform: rotateX(0deg);
+}
+
+.flip:hover .two {
+	transform: rotateX(-180deg);
+}
+
+.flip:hover .two_back {
+	transform: rotateX(0deg);
+}
+
+.flip:hover .three {
+	transform: rotateX(-180deg);
+}
+
+.flip:hover .three_back {
+	transform: rotateX(0deg);
+}
+
+.flip:hover .four {
+	transform: rotateX(-180deg);
+}
+
+.flip:hover .four_back {
+	transform: rotateX(0deg);
+}
+
+.flip:hover .five {
+	transform: rotateX(-180deg);
+}
+
+.flip:hover .five_back {
+	transform: rotateX(0deg);
+}

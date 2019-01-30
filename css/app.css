@@ -1,0 +1,288 @@
+/* All CSS styles go here */
+/*UMN header starts here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color:black;
+  position: relative;
+  padding: 50px;
+}
+
+.container{
+  width:100%;
+  height:100%;
+}
+
+/* Mobile Styles */
+@media  screen and (max-width: 400px) {
+    body {
+      padding:10px;
+    }
+    .container {
+      padding: 0 2px 0 0 2px;
+    }
+    .cdes_logo {
+      display: none;
+    }
+    .text_logo {
+      display: none;
+    }
+    .initial_logo {
+      width: 30%;
+    }
+    .menu {
+      display:inline-block;
+      float:right;
+      padding-top:5px;
+    }
+    .nav1{
+      display: none;
+      float: none;
+    }
+  }
+
+
+
+/* Tablet Styles */
+@media  screen and (min-width: 401px) and (max-width: 970px) {
+    body {
+      padding:30px;
+    }
+    .container {
+      padding: 0  15px 0  15px;
+    }
+    .menu {
+        display:inline-block;
+        float:right;
+    }
+    .cdes_logo {
+      display: none;
+    }
+    .text_logo {
+      display: none;
+    }
+    .nav1 {
+      display: none;
+    }
+    .initial_logo {
+      width: 90px;
+    }
+    .autoplay{
+      position:absolute;
+      top:10%;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 971px) {
+    .container {
+      padding: 0  50px 0  50px;
+    }
+    .menu {
+      display: none;
+    }
+    .small_nav {
+     flex-direction: row;
+    }
+}
+/*Resoponsive Three Columns Styles*/
+@media screen and (max-width: 800px) {
+  .row .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.row .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+/* End of @media */
+
+/* Logos and Navigation Styles */
+.logos {
+  padding: 0;
+}
+
+.logos, a {
+  text-decoration: none;
+  }
+
+.initial_logo {
+  border-bottom: none;
+  width: 170px;
+  float: left;
+  padding: 0;
+}
+
+.cdes_logo {
+  border-bottom: none;
+  width: 230px;
+  float: right;
+  padding: 9px 10px 0 20px;
+}
+
+.text_logo {
+  border-bottom: none;
+  width: 370px;
+  float: left;
+  padding: 17px 10px 0 20px;
+}
+
+.h_menu {
+  border-bottom: none;
+  width: 45px;
+  padding: 0;
+}
+
+.nav1{
+  position: absolute;
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.nav1 a {
+    display: inline-block;
+    margin: 15px 30px 0 10px;
+    text-decoration: none;
+    color:#8E8D8D;
+  }
+
+.nav1 a:hover {
+  color:#000;
+    }
+
+.small_nav {
+  position:absolute;
+  left:43%;
+  top:80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   background-color: #fff;
+   width:50%;
+   height:2000px;
+   z-index: 1;
+  }
+  .small_nav a{
+  padding-top:10px;
+    }
+
+/*Image Slider*/
+.autoplay{
+  position: absolute;
+  width: 85%;
+  top: 150px;
+
+}
+.thumb img{
+  width: 100%;
+
+}
+
+
+/*Resoponsive Three Columns*/
+.column {
+flex: 1;
+margin: 5px 30px 0 0;
+&:first-child { margin-left: 0; }
+&:last-child { margin-right: 0; }
+}
+
+.row {
+width: 85%;
+display:flex;
+flex-flow: row wrap;
+justify-content: left;
+margin: 5px 0;
+position:inherit;
+top:500px;
+}
+
+/*Text styles*/
+.text{
+  font-size: 16px;
+  width: 250px;
+    padding-top: 5px;
+    line-height:19px;
+}
+
+.title{
+  font-weight:bold;
+  font-size: 16px;
+  width: 250px;
+  padding-top: 15px;
+}
+
+.text2{
+  font-size: 15px;
+  width: 250px;
+    padding-top: 5px;
+    line-height:17px;
+}
+
+.title2{
+  font-weight:bold;
+  font-size: 14px;
+  width: 250px;
+  padding-top: 15px;
+}
+
+.section{
+  font-weight:bold;
+  font-size: 18px;
+  width: 250px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.week_object{
+width: 150px;
+padding-top: 10px;
+}
+
+.toggle_text{
+  font-size: 15px;
+  width: 250px;
+  padding-top: 5px;
+  line-height:19px;
+  display:none;
+
+}
+
+.toggle_title {cursor: pointer;
+  font-weight:bold;
+  font-size: 17px;
+  width: 250px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+
+/*UMN footer*/
+
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: 5em;
+    border-style: inset;
+    border-width: 5px;
+
+}
